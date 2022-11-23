@@ -60,13 +60,13 @@ const PeerVideoAudioElem: React.FC<Props> = ({ peerIdAtIndex }) => {
   }, [peerMicTrack]);
 
   return (
-    <div style={{ width: "50%" }}>
+    <div style={{ width: "100%" }}>
       <video
         ref={videoRef}
         muted
         autoPlay
         playsInline
-        style={{ width: "100%" }}
+        style={{ width: "90%" }}
       />
       <audio ref={audioRef} autoPlay playsInline controls={false}></audio>
     </div>
